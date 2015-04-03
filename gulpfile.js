@@ -4,6 +4,7 @@ var buildRoot = 'public',
 	stylesPath = 'src/**/*.scss',
 	scriptsPath = 'src/**/*.js',
 	appEntry = './src/mms-ui-components.js',
+	appLibs = require('./src/libs.json'),
 
 	debugShim = false,
 
@@ -95,3 +96,71 @@ gulp.task('browserify-app', function () {
 
     return bundle();
 });
+
+gulp.task('copy-libs', function() {
+
+    var styleMapFileNames,
+        scriptMapFileNames,
+        scriptMapMapFileNames;
+
+    console.log('Copying libs...');
+
+    styleMapFileNames = appLibs.styles.map(function(fileName) {
+        return path.join(
+            path.dirname(fileName),
+            path.basename(fileName, '.css') + '.map'
+        );
+    });
+
+    scriptMapFileNames = appLibs.scripts.map(function(fileName) {
+        return path.join(
+            path.dirname(fileName),
+            path.basename(fileName, '.js') + '.map'
+        );
+    });
+
+    scriptMapMapFileNames = appLibs.scripts.map(function(fileName) {
+        return path.join(
+            path.dirname(fileName),
+            path.basename(fileName) + '.map'
+        );
+    });
+
+    gulp.src(appLibs.styles)
+        .pipe(rename(function(path) {
+            path.dirname = 'libs';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+    gulp.src(appLibs.scripts)
+        .pipe(rename(function(path) {
+            path.dirname = 'libs';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+    gulp.src(styleMapFileNames)
+        .pipe(rename(function(path) {
+            path.dirname = 'libs';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+    gulp.src(scriptMapFileNames)
+        .pipe(rename(function(path) {
+            path.dirname = 'libs';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+    gulp.src(scriptMapMapFileNames)
+        .pipe(rename(function(path) {
+            path.dirname = 'libs';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+    gulp.src(appLibs.fonts)
+        .pipe(rename(function(path) {
+            path.dirname = 'fonts';
+        }))
+        .pipe(gulp.dest(buildRoot));
+
+});
+
