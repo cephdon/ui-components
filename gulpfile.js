@@ -5,6 +5,11 @@ var buildRoot = 'public',
 	scriptsPath = 'src/**/*.js',
 	appEntry = './src/mms-ui-components.js',
 	appLibs = require('./src/libs.json'),
+	imagePatterns = [
+  	    'src/**/*.png',
+	    'src/**/*.jpg',
+	    'src/**/*.svg'
+	],
 
 	debugShim = false,
 
@@ -162,5 +167,17 @@ gulp.task('copy-libs', function() {
         }))
         .pipe(gulp.dest(buildRoot));
 
+});
+
+
+gulp.task('compile-images', function() {
+
+    console.log('Compiling images...');
+
+    gulp.src(imagePatterns)
+        .pipe(rename(function(path) {
+            path.dirname = '';
+        }))
+        .pipe(gulp.dest(buildRoot + '/images/'));
 });
 
