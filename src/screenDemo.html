@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	
+    <!-- Library styles -->
+    <% _.forEach(styles, function(style) { %><link rel="stylesheet" type="text/css" href="<%- style %>">
+    <% }); %>
+    <!-- // Library styles -->
+
+	<link rel="stylesheet" type="text/css" href="styles/mms-ui-components.css">
+
+	<title>Metamorphosys-screen</title>
+</head>
+<body ng-app="mms.screensDemo" class="mms screens-demo">
+<mms-screen>
+
+</mms-screen>
+
+<!-- Library scripts -->
+<% _.forEach(scripts, function(script) { %><script src="<%- script %>"></script>
+<% }); %>
+<!-- // Library scripts -->
+
+<script src="scripts/mms-ui-components-templates.js"></script>
+<script src="scripts/mms-ui-components.js"></script>
+
+</body>
+</html>

@@ -6,8 +6,6 @@ angular.module('mms.screen', [])
 
             function MMSScreenController() {
 
-                this.state = 'welcome';
-
             }
 
             return {

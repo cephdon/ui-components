@@ -1,8 +1,11 @@
 'use strict';
 
-var buildRoot = './public',
-	stylesPath = './src/**/*.scss',
-	scriptsPath = './**/*.js',
+var buildRoot = 'public',
+	stylesPath = 'src/**/*.scss',
+	scriptsPath = 'src/**/*.js',
+	appEntry = './src/mms-ui-components.js',
+
+	debugShim = false,
 
     gulp = require('gulp'),
     eslint = require('gulp-eslint'),
@@ -21,6 +24,13 @@ var buildRoot = './public',
 	fs = require('fs-extra'),
     path = require('path');
 
+
+function swallowError(error) {
+    //If you want details of the error in the console
+    console.log(error.toString());
+
+    this.emit('end');
+}
 
 
 gulp.task('clean-build', function () {
@@ -52,4 +62,36 @@ gulp.task('lint-scripts', function () {
         .pipe(eslint())
         .pipe(eslint.format());
 
+});
+
+gulp.task('browserify-app', function () {
+
+    var bundler, bundle;
+    console.log('Browserifying app...');
+
+    if (debugShim) {
+        process.env.BROWSERIFYSHIM_DIAGNOSTICS = 1;
+    }
+    bundler = browserify({
+        entries: [appEntry],
+        debug: true
+    });
+
+    bundle = function () {
+        return bundler
+            .bundle()
+            .on('error', swallowError)
+            .pipe(source(appEntry))
+            .pipe(buffer())
+            .pipe(sourcemaps.init({loadMaps: true}))
+            .pipe(rename(function (path) {
+                path.dirname = '';
+            }))
+            // Add transformation tasks to the pipeline here.
+            //.pipe(uglify())
+            .pipe(sourcemaps.write('./'))
+            .pipe(gulp.dest(buildRoot + '/scripts/'));
+    };
+
+    return bundle();
 });
