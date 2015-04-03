@@ -1,0 +1,38 @@
+{
+  "name": "ui-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.6",
+    "fs-extra": "^0.18.0",
+    "gulp-angular-templatecache": "^1.6.0",
+    "gulp-buffer": "0.0.2",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-eslint": "^0.8.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-template": "^3.0.0",
+    "path": "^0.11.14",
+    "run-sequence": "^1.0.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metamorph-inc/ui-components.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metamorph-inc/ui-components/issues"
+  },
+  "homepage": "https://github.com/metamorph-inc/ui-components"
+}
