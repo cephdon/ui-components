@@ -2,7 +2,8 @@
 
 - `bower install`
 - `npm install`
-- run eg. `python -m SimpleHTTPServer 8600` to serve generated pages from public
+- run eg: `python -m SimpleHTTPServer 8600` to serve generated pages from public
+- preview in browser at eg: http://localhost:8600/public/dashboard.html
 
 ## Developer commands
 
