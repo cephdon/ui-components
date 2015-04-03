@@ -11,3 +11,4 @@
 - `gulp lint-scripts`: run linter
 - `gulp browserify-app`: compile and stage app scripts
 - `gulp copy-libs`: copy librray assets (specified in src/libs.json) over to public folder 
+- `gulp compile-templates`: compile templates into a singe JS module and creates html files for individual screen-tags. These need to be specified beforehand, see `availableScreens` in gulpfile.
