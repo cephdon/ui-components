@@ -237,10 +237,10 @@ gulp.task('compile-all', function(cb) {
 
 gulp.task('register-watchers', ['compile-all'], function(cb) {
 
-    gulp.watch([scriptsPath, appEntry], ['compile-scripts', 'refresh-server']);
-    gulp.watch([appTemplates, screenTemplate], ['compile-templates', 'refresh-server']);
-    gulp.watch([stylesPath], ['compile-styles', 'refresh-server']);
-    gulp.watch([imagePatterns], ['compile-images', 'refresh-server']);
+    gulp.watch([scriptsPath, appEntry], ['compile-scripts']);
+    gulp.watch([appTemplates, screenTemplate], ['compile-templates']);
+    gulp.watch([stylesPath], ['compile-styles']);
+    gulp.watch([imagePatterns], ['compile-images']);
 
     return cb;
 });

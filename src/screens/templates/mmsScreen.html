@@ -1,5 +1,27 @@
 <div class="mms-screen">
-	<div>Common header</div>
+	
+	<!-- Stuff same accross the different pages -->
+	 <md-toolbar>
+      <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings">
+          <md-icon md-svg-icon="images/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+          <span>Toolbar with Icon Buttons</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+          <md-icon md-svg-icon="images/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+          <md-icon md-svg-icon="images/more_vert.svg"></md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+
+    <!-- Individual pages will be rendered-here -->
 	<ng-transclude></ng-transclude>
+
+	<!-- Stuff same accross the different pages -->
 	<div>Common footer</div>
 </div>
