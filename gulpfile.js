@@ -77,7 +77,7 @@ gulp.task('lint-scripts', function () {
 
 });
 
-gulp.task('browserify-app', function () {
+gulp.task('browserify-app', ['lint-scripts'], function () {
 
     var bundler, bundle;
     console.log('Browserifying app...');
