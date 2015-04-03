@@ -7,3 +7,4 @@
 
 - `gulp clean-build`: erases contents of public folder
 - `gulp compile-styles`: generates styles
+- `gulp lint-scripts`: run linter

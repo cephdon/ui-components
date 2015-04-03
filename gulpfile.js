@@ -2,6 +2,7 @@
 
 var buildRoot = './public',
 	stylesPath = './src/**/*.scss',
+	scriptsPath = './**/*.js',
 
     gulp = require('gulp'),
     eslint = require('gulp-eslint'),
@@ -41,4 +42,14 @@ gulp.task('compile-styles', function () {
         }))
         .pipe(concat('mms-ui-components.css'))
         .pipe(gulp.dest(buildRoot + '/styles/'));
+});
+
+gulp.task('lint-scripts', function () {
+
+    console.log('Linting scripts...');
+
+    gulp.src(scriptsPath)
+        .pipe(eslint())
+        .pipe(eslint.format());
+
 });
