@@ -1,0 +1,13 @@
+{
+    "scripts": [
+        "./bower_components/angular/angular.js",
+        "./bower_components/angular-material/angular-material.min.js"        
+    ],
+    "styles": [
+        "./bower_components/angular-material/angular-material.min.css",
+        "./bower_components/font-awesome/css/font-awesome.min.css"
+    ],
+    "fonts": [
+        "./bower_components/font-awesome/fonts/*"
+    ]
+}
