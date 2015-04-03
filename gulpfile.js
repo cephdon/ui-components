@@ -1,6 +1,7 @@
 'use strict';
 
 var buildRoot = './public',
+	stylesPath = './src/**/*.scss',
 
     gulp = require('gulp'),
     eslint = require('gulp-eslint'),
@@ -23,4 +24,21 @@ var buildRoot = './public',
 
 gulp.task('clean-build', function () {
     return gulp.src(buildRoot).pipe(clean());
+});
+
+gulp.task('compile-styles', function () {
+
+    console.log('Compiling styles...');
+
+    gulp.src(stylesPath)
+
+        .pipe(sass({
+            errLogToConsole: true,
+            sourceComments: 'map'
+        }))
+        .pipe(rename(function (path) {
+            path.dirname = '';
+        }))
+        .pipe(concat('mms-ui-components.css'))
+        .pipe(gulp.dest(buildRoot + '/styles/'));
 });
