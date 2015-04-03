@@ -2,3 +2,27 @@
 /* line 1, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .dashboard-screen {
   background-color: #aaaaff; }
+  /* line 6, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage md-grid-list {
+    margin: 8px; }
+  /* line 8, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .gray {
+    background: #f5f5f5; }
+  /* line 10, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .green {
+    background: #b9f6ca; }
+  /* line 12, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .yellow {
+    background: #ffff8d; }
+  /* line 14, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .blue {
+    background: #84ffff; }
+  /* line 16, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .purple {
+    background: #b388ff; }
+  /* line 18, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage .red {
+    background: #ff8a80; }
+  /* line 20, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .dashboard-screen .gridListdemoBasicUsage md-grid-tile {
+    transition: all 400ms ease-out 50ms; }

@@ -235,3 +235,13 @@ gulp.task('compile-all', function(cb) {
     	'compile-styles', 'lint-scripts', 'browserify-app', 'compile-images', 'compile-templates', 'copy-libs', cb);
 });
 
+gulp.task('register-watchers', ['compile-all'], function(cb) {
+
+    gulp.watch([scriptsPath, appEntry], ['compile-scripts', 'refresh-server']);
+    gulp.watch([appTemplates, screenTemplate], ['compile-templates', 'refresh-server']);
+    gulp.watch([stylesPath], ['compile-styles', 'refresh-server']);
+    gulp.watch([imagePatterns], ['compile-images', 'refresh-server']);
+
+    return cb;
+});
+

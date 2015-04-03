@@ -13,7 +13,9 @@ angular.module('mms.screensDemo', [
 },{"./screens/dashboard/dashboard":2,"./screens/mmsScreen":3}],2:[function(require,module,exports){
 'use strict';
 
-angular.module('mms.screens.dashboard', [])
+angular.module('mms.screens.dashboard', [
+        'ngMaterial'
+    ])
     .directive('dashboard', [
         function() {
 

@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('mms.screens.dashboard', [])
+angular.module('mms.screens.dashboard', [
+        'ngMaterial'
+    ])
     .directive('dashboard', [
         function() {
 
