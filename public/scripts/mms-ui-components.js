@@ -7,7 +7,8 @@ require('./screens/dashboard/dashboard');
 
 angular.module('mms.screensDemo', [
 	'mms.screen',
-	'mms.screens.dashboard'
+	'mms.screens.dashboard',
+	'mms.ui-components.templates'
 	]);
 },{"./screens/dashboard/dashboard":2,"./screens/mmsScreen":3}],2:[function(require,module,exports){
 'use strict';
@@ -43,7 +44,7 @@ angular.module('mms.screens.dashboard', [])
                 bindToController: true,
                 replace: true,
                 transclude: false,
-                templateUrl: '/mmsApp/templates/footerDrawer.html',
+                templateUrl: '/mms-ui-components/templates/dashboard.html',
                 require: null
             };
         }
@@ -67,7 +68,7 @@ angular.module('mms.screen', [])
                 bindToController: true,
                 replace: true,
                 transclude: true,
-                templateUrl: '/mmsApp/templates/mmsScreen.html',
+                templateUrl: '/mms-ui-components/templates/mmsScreen.html',
                 require: null
             };
         }

@@ -1,0 +1,2 @@
+angular.module("mms.ui-components.templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("/mms-ui-components/templates/mmsScreen.html","<div class=\"mms-screen\">\n	<div>Common header</div>\n	<ng-transclude></ng-transclude>\n	<div>Common footer</div>\n</div>");
+$templateCache.put("/mms-ui-components/templates/dashboard.html","<div class=\"dashboard-screen\">\nDashboard comes here\n</div>");}]);

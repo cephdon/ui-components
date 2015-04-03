@@ -1,14 +1,21 @@
 'use strict';
 
-var buildRoot = 'public',
+var appName = 'mms-ui-components',
+	buildRoot = 'public',
 	stylesPath = 'src/**/*.scss',
 	scriptsPath = 'src/**/*.js',
+	appTemplates = 'src/*/**/*.html',
 	appEntry = './src/mms-ui-components.js',
 	appLibs = require('./src/libs.json'),
+	screenTemplate = './src/screenTemplate.html',
 	imagePatterns = [
   	    'src/**/*.png',
 	    'src/**/*.jpg',
 	    'src/**/*.svg'
+	],
+
+	availableScreens = [
+		'dashboard'
 	],
 
 	debugShim = false,
@@ -179,5 +186,52 @@ gulp.task('compile-images', function() {
             path.dirname = '';
         }))
         .pipe(gulp.dest(buildRoot + '/images/'));
+});
+
+gulp.task('compile-templates', function() {
+
+    var scriptFileNames,
+        styleFileNames;
+
+    console.log('Compiling app-templates...');
+
+    gulp.src(appTemplates)
+        .pipe(rename(function(path) {
+            path.dirname = 'templates';
+        }))
+        .pipe(templateCache(appName + '-templates.js', {
+            module: 'mms.ui-components.templates',
+            standalone: true,
+            root: '/' + appName + '/'
+        }))
+        .pipe(gulp.dest(buildRoot + '/scripts/'));
+
+    scriptFileNames = appLibs.scripts.map(function(fileName) {
+        return 'libs/' + path.basename(fileName);
+    });
+
+
+    styleFileNames = appLibs.styles.map(function(fileName) {
+        return 'libs/' + path.basename(fileName);
+    });
+
+
+	availableScreens.forEach(function(screenTag) {
+	    gulp.src(screenTemplate)
+	        .pipe(template({
+	            scripts: scriptFileNames,
+	            styles: styleFileNames,
+	            screenTag: screenTag
+	        }))
+            .pipe(rename(function(path) {
+	            path.basename = screenTag;
+    	    }))
+	        .pipe(gulp.dest(buildRoot));
+	});
+});
+
+gulp.task('compile-all', function(cb) {
+    runSequence('clean-build', 
+    	'compile-styles', 'lint-scripts', 'browserify-app', 'compile-images', 'compile-templates', 'copy-libs', cb);
 });
 

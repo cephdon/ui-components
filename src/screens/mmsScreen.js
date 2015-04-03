@@ -15,7 +15,7 @@ angular.module('mms.screen', [])
                 bindToController: true,
                 replace: true,
                 transclude: true,
-                templateUrl: '/mmsApp/templates/mmsScreen.html',
+                templateUrl: '/mms-ui-components/templates/mmsScreen.html',
                 require: null
             };
         }

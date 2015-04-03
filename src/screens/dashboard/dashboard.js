@@ -31,7 +31,7 @@ angular.module('mms.screens.dashboard', [])
                 bindToController: true,
                 replace: true,
                 transclude: false,
-                templateUrl: '/mmsApp/templates/footerDrawer.html',
+                templateUrl: '/mms-ui-components/templates/dashboard.html',
                 require: null
             };
         }
