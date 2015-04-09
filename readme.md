@@ -24,4 +24,4 @@ Add/develop screens in separate subfolders of src/screens. Place common header/f
 
 - Angular Materials: https://material.angularjs.org/#/
 - A set of in-house mainained custom UI components we also use: https://github.com/vu-isis/isis-ui-components
-- Writing code that enables easier transiiton to Angular 2: https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs
+- Writing code that enables easier transition to Angular 2: https://www.airpair.com/angularjs/posts/preparing-for-the-future-of-angularjs
