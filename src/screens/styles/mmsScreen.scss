@@ -1,3 +1,35 @@
 .mms-screen {
 	
 }
+
+/* Header Styles
+   =========================================== */
+
+.logo  {
+	height: 50px; 
+	width: auto;
+	vertical-align: middle;
+}
+
+.user-text {
+	padding-right: 20px;
+	color: #97A2AC;
+}
+
+md-toolbar.md-default-theme {
+	background-color: #3F4A59;
+}
+
+.md-button.md-default-theme.md-primary.md-raised {
+	background-color: #394250;
+}
+
+/* Footer Styles
+   =========================================== */
+
+.footer {
+	background-color: #F0F4F6;
+	height: 100px;
+	text-align: center;
+	padding-top: 10px;
+}

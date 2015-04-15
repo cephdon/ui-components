@@ -1,27 +1,31 @@
 <div class="mms-screen">
-	
-	<!-- Stuff same accross the different pages -->
-	 <md-toolbar>
-      <div class="md-toolbar-tools">
-        <md-button class="md-icon-button" aria-label="Settings">
-          <md-icon md-svg-icon="images/menu.svg"></md-icon>
-        </md-button>
-        <h2>
-          <span>Toolbar with Icon Buttons</span>
-        </h2>
-        <span flex></span>
-        <md-button class="md-icon-button" aria-label="Favorite">
-          <md-icon md-svg-icon="images/favorite.svg" style="color: greenyellow;"></md-icon>
-        </md-button>
-        <md-button class="md-icon-button" aria-label="More">
-          <md-icon md-svg-icon="images/more_vert.svg"></md-icon>
-        </md-button>
+  
+  <!-- Stuff same accross the different pages -->
+  <header>
+     <md-toolbar>
+      <div class="wrapper">
+        <div class="md-toolbar-tools" layout-align="space-around center">
+          <div>
+            <img class="logo" src="images/metamorphLogo.png" alt="metamorph logo"> 
+          </div>
+          <span flex></span>
+          <div>
+            <p class="md-body-2 user-text"><small class="md-caption">Welcome, Guest</small></p>
+          </div>
+          <div>
+            <md-button aria-label="Login" aria-role="button">Login</md-button>
+            <md-button class="md-raised md-primary" aria-label="Sign Up">Sign Up</md-button>
+          </div>
+        </div>
       </div>
-    </md-toolbar>
+      </md-toolbar>
+    </header>
 
     <!-- Individual pages will be rendered-here -->
-	<ng-transclude></ng-transclude>
+  <ng-transclude></ng-transclude>
 
-	<!-- Stuff same accross the different pages -->
-	<div>Common footer</div>
+  <!-- Stuff same accross the different pages -->
+  <div flex class="footer">
+   <div>Common footer</div>
+  </div>
 </div>

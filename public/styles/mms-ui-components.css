@@ -1,28 +1,150 @@
+/* Header Styles
+   =========================================== */
+/* line 8, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.logo {
+  height: 50px;
+  width: auto;
+  vertical-align: middle; }
 
-/* line 1, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.dashboard-screen {
-  background-color: #aaaaff; }
-  /* line 6, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage md-grid-list {
-    margin: 8px; }
-  /* line 8, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .gray {
-    background: #f5f5f5; }
-  /* line 10, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .green {
-    background: #b9f6ca; }
-  /* line 12, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .yellow {
-    background: #ffff8d; }
-  /* line 14, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .blue {
-    background: #84ffff; }
-  /* line 16, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .purple {
-    background: #b388ff; }
-  /* line 18, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage .red {
-    background: #ff8a80; }
-  /* line 20, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
-  .dashboard-screen .gridListdemoBasicUsage md-grid-tile {
-    transition: all 400ms ease-out 50ms; }
+/* line 14, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.user-text {
+  padding-right: 20px;
+  color: #97A2AC; }
+
+/* line 19, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+md-toolbar.md-default-theme {
+  background-color: #3F4A59; }
+
+/* line 23, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.md-button.md-default-theme.md-primary.md-raised {
+  background-color: #394250; }
+
+/* Footer Styles
+   =========================================== */
+/* line 30, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.footer {
+  background-color: #F0F4F6;
+  height: 100px;
+  text-align: center;
+  padding-top: 10px; }
+
+/* Reusable Classes
+   =========================================== */
+/* line 3, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.visually-hidden {
+  text-indent: -9999px;
+  visibility: hidden; }
+
+/* line 8, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.wrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0 1%; } }
+
+/* line 20, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.d-inline {
+  display: inline-block; }
+
+/* Site typography
+   =========================================== */
+/* line 27, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 32, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+html {
+  font: 100%/1.5 sans-serif; }
+
+/* Dashboard Components 
+   =========================================== */
+/* line 39, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.dashboard-header {
+  background-color: #F0F4F6;
+  border-bottom: 1px solid #DEE2E2;
+  margin-bottom: 50px; }
+
+/* line 45, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+h2 {
+  color: #575E67;
+  font-weight: normal; }
+
+/* line 50, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.searchIcon {
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  padding: 15px 25px;
+  border-top: 1px solid #E5E9EA;
+  border-bottom: 1px solid #E5E9EA;
+  border-left: 1px solid #E5E9EA;
+  margin-right: -6px; }
+
+/* line 60, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.dashboard-header input {
+  border-radius: 2px;
+  padding: 15px 15px;
+  border-top: 1px solid #E5E9EA;
+  border-right: 1px solid #E5E9EA;
+  border-bottom: 1px solid #E5E9EA;
+  border-left: none;
+  margin-right: 20px; }
+
+/* line 70, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.dashboard-header .md-button.md-default-theme.md-primary.md-raised {
+  background-color: #3894FD;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 76, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.md-primary .fa {
+  font-size: 1.2rem;
+  line-height: inherit;
+  padding-right: 5px; }
+
+/* line 82, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.font-awesome .fa {
+  padding: 1px 10px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E9EA;
+  font-size: 1.8rem;
+  line-height: inherit; }
+  /* line 90, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .font-awesome .fa.active {
+    color: #3894FD; }
+
+/* line 95, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.font-awesome .md-button {
+  padding: 0;
+  margin: 0; }
+  /* line 99, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  .font-awesome .md-button:first-child {
+    margin-right: -11px; }
+
+/* line 104, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.font-awesome {
+  margin-right: 20px; }
+
+/* Main Content
+   =========================================== */
+/* line 111, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.main {
+  background-color: #FFFFFF;
+  margin-bottom: 100px; }
+
+/* line 116, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.project-banner {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #45B99C;
+  border-radius: 2px;
+  margin: 0px 8px 50px 8px; }
+
+/* line 124, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.main a {
+  color: white; }
