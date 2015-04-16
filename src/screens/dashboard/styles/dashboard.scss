@@ -8,9 +8,9 @@
 }
 
 .wrapper {
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;	
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;	
 
 	@media screen and (max-width: 600px) {
 		width: 100%;
@@ -39,33 +39,32 @@ html  {
    =========================================== */
 
 .dashboard-header {
-	background-color: #F0F4F6;
-	border-bottom: 1px solid #DEE2E2;
+	background-color: $c-background-light;
+	border-bottom: 1px solid $c-border-dark;
 	margin-bottom: 50px;
 }
 
 h2 {
-	color: #575E67;
+	color: $c-text-dark;
 	font-weight: normal;
 }
 
 .searchIcon {
-	background-color: #FFFFFF;	
+	background-color: $c-white;	
 	border-radius: 2px;
 	padding: 15px 25px;
-	border-top: 1px solid #E5E9EA;
-	border-bottom: 1px solid #E5E9EA;
-	border-left: 1px solid #E5E9EA;
+	border-color: $c-border-light;
+	border-style: solid;
+	border-width: 1px 0px 1px 1px;
 	margin-right: -6px;
 }
 
 .dashboard-header input {
 	border-radius: 2px;
 	padding: 15px 15px;
-	border-top: 1px solid #E5E9EA;
-	border-right: 1px solid #E5E9EA;
-	border-bottom: 1px solid #E5E9EA;
-	border-left: none;	
+	border-color: $c-border-light;
+	border-style: solid;
+	border-width: 1px 1px 1px 0px;
 	margin-right: 20px;
 }
 
@@ -84,8 +83,8 @@ h2 {
 .font-awesome .fa {
 	padding: 1px 10px;
 	border-radius: 2px;
-	background-color: #FFFFFF;
-	border: 1px solid #E5E9EA;
+	background-color: $c-white;
+	border: 1px solid $c-border-light;
  	font-size: 1.8rem;
  	line-height: inherit;
 
@@ -111,19 +110,19 @@ h2 {
 /* Main Content
    =========================================== */
 .main {
-	background-color: #FFFFFF;
+	background-color: $c-white;
 	margin-bottom: 100px;
 }
 
 .project-banner {
 	text-align: center;
-	color: #FFFFFF;
-	background-color: #45B99C;
+	color: $c-white;
+	background-color: $c-background-highlight;
 	border-radius: 2px;
 	margin: 0px 8px 50px 8px;
 }
 
 .main a {
-	color: white;
+	color: $c-white;
 }
 

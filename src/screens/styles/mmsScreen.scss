@@ -19,7 +19,7 @@
 }
 
 md-toolbar.md-default-theme {
-	background-color: #3F4A59;
+	background-color: $c-background-dark;
 }
 
 .md-button.md-default-theme.md-primary.md-raised {
@@ -30,7 +30,7 @@ md-toolbar.md-default-theme {
    =========================================== */
 
 .footer {
-	background-color: #F0F4F6;
+	background-color: $c-background-light;
 	height: 100px;
 	text-align: center;
 	padding-top: 10px;

@@ -1,150 +1,169 @@
+/* Color Variables
+   =========================================== */
+/* Grey Scale (Dark) Colors
+   =========================================== */
+/* Grey Scale (Medium) Colors
+   =========================================== */
+/* Grey Scale (Lighter) Colors
+   =========================================== */
+/* Theme Specific Colors
+   =========================================== */
 /* Header Styles
    =========================================== */
-/* line 10, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 10, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .logo {
   height: 50px;
   width: auto;
   vertical-align: middle; }
 
-/* line 16, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 16, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .user-text {
   padding-right: 20px;
   color: #97A2AC; }
 
-/* line 21, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 21, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 md-toolbar.md-default-theme {
   background-color: #3F4A59; }
 
-/* line 25, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 25, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .md-button.md-default-theme.md-primary.md-raised {
   background-color: #394250; }
 
 /* Footer Styles
    =========================================== */
-/* line 32, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 32, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .footer {
   background-color: #F0F4F6;
   height: 100px;
   text-align: center;
   padding-top: 10px; }
 
+/* Color Variables
+   =========================================== */
+/* Grey Scale (Dark) Colors
+   =========================================== */
+/* Grey Scale (Medium) Colors
+   =========================================== */
+/* Grey Scale (Lighter) Colors
+   =========================================== */
+/* Theme Specific Colors
+   =========================================== */
 /* Reusable Classes
    =========================================== */
-/* line 5, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 5, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .visually-hidden {
   text-indent: -9999px;
   visibility: hidden; }
 
-/* line 10, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 10, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .wrapper {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%; }
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
   @media screen and (max-width: 600px) {
     .wrapper {
       width: 100%;
       margin: 0;
       padding: 0 1%; } }
 
-/* line 22, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 22, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .d-inline {
   display: inline-block; }
 
 /* Site typography
    =========================================== */
-/* line 29, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 29, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased; }
 
-/* line 34, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 34, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 html {
   font: 100%/1.5 sans-serif; }
 
 /* Dashboard Components 
    =========================================== */
-/* line 41, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 41, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .dashboard-header {
   background-color: #F0F4F6;
   border-bottom: 1px solid #DEE2E2;
   margin-bottom: 50px; }
 
-/* line 47, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 47, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 h2 {
   color: #575E67;
   font-weight: normal; }
 
-/* line 52, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 52, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .searchIcon {
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-radius: 2px;
   padding: 15px 25px;
-  border-top: 1px solid #E5E9EA;
-  border-bottom: 1px solid #E5E9EA;
-  border-left: 1px solid #E5E9EA;
+  border-color: #E5E9EA;
+  border-style: solid;
+  border-width: 1px 0px 1px 1px;
   margin-right: -6px; }
 
-/* line 62, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 62, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .dashboard-header input {
   border-radius: 2px;
   padding: 15px 15px;
-  border-top: 1px solid #E5E9EA;
-  border-right: 1px solid #E5E9EA;
-  border-bottom: 1px solid #E5E9EA;
-  border-left: none;
+  border-color: #E5E9EA;
+  border-style: solid;
+  border-width: 1px 1px 1px 0px;
   margin-right: 20px; }
 
-/* line 72, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 71, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .dashboard-header .md-button.md-default-theme.md-primary.md-raised {
   background-color: #3894FD;
   text-align: center;
   vertical-align: middle; }
 
-/* line 78, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 77, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .md-primary .fa {
   font-size: 1.2rem;
   line-height: inherit;
   padding-right: 5px; }
 
-/* line 84, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 83, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome .fa {
   padding: 1px 10px;
   border-radius: 2px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border: 1px solid #E5E9EA;
   font-size: 1.8rem;
   line-height: inherit; }
-  /* line 92, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  /* line 91, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
   .font-awesome .fa.active {
     color: #3894FD; }
 
-/* line 97, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 96, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome .md-button {
   padding: 0;
   margin: 0; }
-  /* line 101, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  /* line 100, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
   .font-awesome .md-button:first-child {
     margin-right: -11px; }
 
-/* line 106, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 105, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome {
   margin-right: 20px; }
 
 /* Main Content
    =========================================== */
-/* line 113, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 112, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .main {
-  background-color: #FFFFFF;
+  background-color: #fff;
   margin-bottom: 100px; }
 
-/* line 118, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 117, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .project-banner {
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   background-color: #45B99C;
   border-radius: 2px;
   margin: 0px 8px 50px 8px; }
 
-/* line 126, /Users/laszlojuracz/Projects/morph/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 125, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .main a {
-  color: white; }
+  color: #fff; }
