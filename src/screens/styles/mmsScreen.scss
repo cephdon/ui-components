@@ -4,6 +4,45 @@
 	
 }
 
+/* Reusable Classes
+   =========================================== */
+.visually-hidden {
+	text-indent: -9999px;
+	visibility: hidden;
+}
+
+.wrapper {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;	
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		margin: 0;
+		padding: 0 1%;
+	}
+}
+
+.d-inline {
+	display: inline-block;
+}
+
+.mrg-btm {
+	margin-bottom: 25px;
+}
+
+/* Site typography
+   =========================================== */
+
+body  { 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+html  {   
+    font: 100%/1.5 sans-serif;      
+}
+
 /* Header Styles
    =========================================== */
 
@@ -31,7 +70,7 @@ md-toolbar.md-default-theme {
 
 .footer {
 	background-color: $c-background-light;
-	height: 100px;
+	height: 200px;
 	text-align: center;
 	padding-top: 10px;
 }

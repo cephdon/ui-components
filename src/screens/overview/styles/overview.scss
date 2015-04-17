@@ -1,0 +1,93 @@
+@import '../../styles/_colors';
+
+
+/* Overview Components 
+   =========================================== */
+.overview-screen .sub-header {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+.overview-screen .sub-header input {
+	margin-right: 0px;
+}
+
+
+/* Top Level Tabs
+   =========================================== */
+
+md-tabs.md-default-theme .md-header {
+	background-color: $c-background-light;
+	margin-bottom: 25px;
+}
+
+
+md-tabs .md-header-items-container,
+.md-tabs-content {
+	padding: 0 10%;
+
+	@media screen and (max-width: 600px) {
+		padding: 0 1%;
+	}
+}
+
+md-tabs.md-default-theme md-tab.active {
+	color: $c-text-dark;
+	font-weight: bold;
+}
+
+md-tabs-ink-bar {
+	height: 4px;
+	margin-top: -4px;
+}
+
+md-tabs.md-default-theme md-tabs-ink-bar {
+	color: $c-theme;
+	background: $c-theme; 
+}
+
+/* Inner Level Tabs
+=========================================== */
+.overview-inner-tabs {
+	md-tabs.md-default-theme .md-header {
+		background-color: transparent;
+	}
+
+	md-tabs .md-header-items-container,
+	.md-tabs-content {
+		padding: 0 0;
+
+		@media screen and (max-width: 600px) {
+			padding: 0 0;
+		}
+	}
+
+	md-tabs.md-default-theme md-tabs-ink-bar {
+		display: none !important;
+	}
+}
+
+
+.placeholder {
+	width: 100%;
+	height: 700px;
+	background: $c-background-light;
+}
+
+.graph-placeholder {
+	width: 70%;
+	height: 400px;
+	background: $c-background-light;
+}
+/* Overview Main Content
+   =========================================== */
+.main-overview {
+	background-color: $c-white;
+	margin-bottom: 100px;
+}
+
+
+.main-overview a {
+	color: $c-white;
+}
+

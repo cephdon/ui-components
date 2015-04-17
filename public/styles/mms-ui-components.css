@@ -8,33 +8,70 @@
    =========================================== */
 /* Theme Specific Colors
    =========================================== */
+/* Reusable Classes
+   =========================================== */
+/* line 9, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.visually-hidden {
+  text-indent: -9999px;
+  visibility: hidden; }
+
+/* line 14, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.wrapper {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; }
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0 1%; } }
+
+/* line 26, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.d-inline {
+  display: inline-block; }
+
+/* line 30, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.mrg-btm {
+  margin-bottom: 25px; }
+
+/* Site typography
+   =========================================== */
+/* line 37, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 42, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+html {
+  font: 100%/1.5 sans-serif; }
+
 /* Header Styles
    =========================================== */
-/* line 10, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 49, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .logo {
   height: 50px;
   width: auto;
   vertical-align: middle; }
 
-/* line 16, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 55, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .user-text {
   padding-right: 20px;
   color: #97A2AC; }
 
-/* line 21, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 60, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 md-toolbar.md-default-theme {
   background-color: #3F4A59; }
 
-/* line 25, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 64, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .md-button.md-default-theme.md-primary.md-raised {
   background-color: #394250; }
 
 /* Footer Styles
    =========================================== */
-/* line 32, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 71, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .footer {
   background-color: #F0F4F6;
-  height: 100px;
+  height: 200px;
   text-align: center;
   padding-top: 10px; }
 
@@ -48,64 +85,31 @@ md-toolbar.md-default-theme {
    =========================================== */
 /* Theme Specific Colors
    =========================================== */
-/* Reusable Classes
-   =========================================== */
-/* line 5, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.visually-hidden {
-  text-indent: -9999px;
-  visibility: hidden; }
-
-/* line 10, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.wrapper {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%; }
-  @media screen and (max-width: 600px) {
-    .wrapper {
-      width: 100%;
-      margin: 0;
-      padding: 0 1%; } }
-
-/* line 22, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.d-inline {
-  display: inline-block; }
-
-/* Site typography
-   =========================================== */
-/* line 29, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
-
-/* line 34, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-html {
-  font: 100%/1.5 sans-serif; }
-
 /* Dashboard Components 
    =========================================== */
-/* line 41, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.dashboard-header {
+/* line 7, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.sub-header {
   background-color: #F0F4F6;
   border-bottom: 1px solid #DEE2E2;
   margin-bottom: 50px; }
 
-/* line 47, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-h2 {
+/* line 13, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+[aria-label="banner"] {
   color: #575E67;
   font-weight: normal; }
 
-/* line 52, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 18, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .searchIcon {
   background-color: #fff;
   border-radius: 2px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   border-color: #E5E9EA;
   border-style: solid;
   border-width: 1px 0px 1px 1px;
   margin-right: -6px; }
 
-/* line 62, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.dashboard-header input {
+/* line 28, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.sub-header input {
   border-radius: 2px;
   padding: 15px 15px;
   border-color: #E5E9EA;
@@ -113,19 +117,19 @@ h2 {
   border-width: 1px 1px 1px 0px;
   margin-right: 20px; }
 
-/* line 71, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.dashboard-header .md-button.md-default-theme.md-primary.md-raised {
+/* line 37, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.md-button.md-default-theme.md-primary.md-raised {
   background-color: #3894FD;
   text-align: center;
   vertical-align: middle; }
 
-/* line 77, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 43, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .md-primary .fa {
   font-size: 1.2rem;
   line-height: inherit;
   padding-right: 5px; }
 
-/* line 83, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 49, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome .fa {
   padding: 1px 10px;
   border-radius: 2px;
@@ -133,30 +137,30 @@ h2 {
   border: 1px solid #E5E9EA;
   font-size: 1.8rem;
   line-height: inherit; }
-  /* line 91, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  /* line 57, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
   .font-awesome .fa.active {
     color: #3894FD; }
 
-/* line 96, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 62, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome .md-button {
   padding: 0;
   margin: 0; }
-  /* line 100, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+  /* line 66, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
   .font-awesome .md-button:first-child {
     margin-right: -11px; }
 
-/* line 105, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 71, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .font-awesome {
   margin-right: 20px; }
 
-/* Main Content
+/* Dashboard Main Content
    =========================================== */
-/* line 112, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.main {
+/* line 78, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.main-dashboard {
   background-color: #fff;
   margin-bottom: 100px; }
 
-/* line 117, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+/* line 83, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
 .project-banner {
   text-align: center;
   color: #fff;
@@ -164,6 +168,94 @@ h2 {
   border-radius: 2px;
   margin: 0px 8px 50px 8px; }
 
-/* line 125, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
-.main a {
+/* line 91, /Users/matthew/projects/code/ui-components/src/screens/dashboard/styles/dashboard.scss */
+.main-dashboard a {
+  color: #fff; }
+
+/* Color Variables
+   =========================================== */
+/* Grey Scale (Dark) Colors
+   =========================================== */
+/* Grey Scale (Medium) Colors
+   =========================================== */
+/* Grey Scale (Lighter) Colors
+   =========================================== */
+/* Theme Specific Colors
+   =========================================== */
+/* Overview Components 
+   =========================================== */
+/* line 6, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.overview-screen .sub-header {
+  margin-bottom: 0px;
+  border-bottom: none; }
+
+/* line 11, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.overview-screen .sub-header input {
+  margin-right: 0px; }
+
+/* Top Level Tabs
+   =========================================== */
+/* line 19, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+md-tabs.md-default-theme .md-header {
+  background-color: #F0F4F6;
+  margin-bottom: 25px; }
+
+/* line 26, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+md-tabs .md-header-items-container, .md-tabs-content {
+  padding: 0 10%; }
+  @media screen and (max-width: 600px) {
+    md-tabs .md-header-items-container, .md-tabs-content {
+      padding: 0 1%; } }
+
+/* line 34, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+md-tabs.md-default-theme md-tab.active {
+  color: #575E67;
+  font-weight: bold; }
+
+/* line 39, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+md-tabs-ink-bar {
+  height: 4px;
+  margin-top: -4px; }
+
+/* line 44, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+md-tabs.md-default-theme md-tabs-ink-bar {
+  color: #3894FD;
+  background: #3894FD; }
+
+/* Inner Level Tabs
+=========================================== */
+/* line 52, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.overview-inner-tabs md-tabs.md-default-theme .md-header {
+  background-color: transparent; }
+/* line 57, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.overview-inner-tabs md-tabs .md-header-items-container, .overview-inner-tabs .md-tabs-content {
+  padding: 0 0; }
+  @media screen and (max-width: 600px) {
+    .overview-inner-tabs md-tabs .md-header-items-container, .overview-inner-tabs .md-tabs-content {
+      padding: 0 0; } }
+/* line 65, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.overview-inner-tabs md-tabs.md-default-theme md-tabs-ink-bar {
+  display: none !important; }
+
+/* line 71, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.placeholder {
+  width: 100%;
+  height: 700px;
+  background: #F0F4F6; }
+
+/* line 77, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.graph-placeholder {
+  width: 70%;
+  height: 400px;
+  background: #F0F4F6; }
+
+/* Overview Main Content
+   =========================================== */
+/* line 84, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.main-overview {
+  background-color: #fff;
+  margin-bottom: 100px; }
+
+/* line 90, /Users/matthew/projects/code/ui-components/src/screens/overview/styles/overview.scss */
+.main-overview a {
   color: #fff; }

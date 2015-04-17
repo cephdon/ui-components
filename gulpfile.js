@@ -15,7 +15,8 @@ var appName = 'mms-ui-components',
 	],
 
 	availableScreens = [
-		'dashboard'
+		'dashboard',
+        'overview'
 	],
 
 	debugShim = false,

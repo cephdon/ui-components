@@ -1,50 +1,16 @@
 @import '../../styles/_colors';
 
-/* Reusable Classes
-   =========================================== */
-.visually-hidden {
-	text-indent: -9999px;
-	visibility: hidden;
-}
-
-.wrapper {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;	
-
-	@media screen and (max-width: 600px) {
-		width: 100%;
-		margin: 0;
-		padding: 0 1%;
-	}
-}
-
-.d-inline {
-	display: inline-block;
-}
-
-/* Site typography
-   =========================================== */
-
-body  { 
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-}
-
-html  {   
-    font: 100%/1.5 sans-serif;      
-}
 
 /* Dashboard Components 
    =========================================== */
 
-.dashboard-header {
+.sub-header {
 	background-color: $c-background-light;
 	border-bottom: 1px solid $c-border-dark;
 	margin-bottom: 50px;
 }
 
-h2 {
+[aria-label="banner"] {
 	color: $c-text-dark;
 	font-weight: normal;
 }
@@ -52,14 +18,14 @@ h2 {
 .searchIcon {
 	background-color: $c-white;	
 	border-radius: 2px;
-	padding: 15px 25px;
+	padding: 15px 15px;
 	border-color: $c-border-light;
 	border-style: solid;
 	border-width: 1px 0px 1px 1px;
 	margin-right: -6px;
 }
 
-.dashboard-header input {
+.sub-header input {
 	border-radius: 2px;
 	padding: 15px 15px;
 	border-color: $c-border-light;
@@ -68,8 +34,8 @@ h2 {
 	margin-right: 20px;
 }
 
-.dashboard-header .md-button.md-default-theme.md-primary.md-raised {
-	background-color: #3894FD;
+.md-button.md-default-theme.md-primary.md-raised {
+	background-color: $c-theme;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -89,7 +55,7 @@ h2 {
  	line-height: inherit;
 
  	&.active {
- 		color: #3894FD;
+ 		color: $c-theme;
  	}
 }
 
@@ -107,9 +73,9 @@ h2 {
 }
 
 
-/* Main Content
+/* Dashboard Main Content
    =========================================== */
-.main {
+.main-dashboard {
 	background-color: $c-white;
 	margin-bottom: 100px;
 }
@@ -122,7 +88,7 @@ h2 {
 	margin: 0px 8px 50px 8px;
 }
 
-.main a {
+.main-dashboard a {
 	color: $c-white;
 }
 
