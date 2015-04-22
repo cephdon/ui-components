@@ -1,7 +1,7 @@
 <div class="overview-screen">
     <div class="sub-header">
       <div class="wrapper">
-          <div layout="row" layout-align="space-around center" layout-padding layout-wrap>
+          <div layout="row" layout-sm="column" layout-align="space-around center" layout-padding layout-wrap>
             <div flex="50" flex-sm="100">
               <h2 class="md-headline" aria-label="banner">Camera Module Starter</h2>
             </div>
@@ -60,13 +60,13 @@
               <md-content class="md-padding">
                 <div class="overview-inner-tabs">
                   <md-content>
-                    <md-tabs md-dynamic-height md-align="right">
-                      <md-tab label="All">
+                    <md-tabs md-dynamic-height>
+                      <md-tab label="All[ ]">
                         <md-content class="md-padding">
                           <p>all results</p>
                         </md-content>
                       </md-tab>
-                      <md-tab label="Schematic">
+                      <md-tab label="Schematic[ ]">
                         <md-content class="md-padding">
                           <h3 class="md-display-2">Schematic</h3>
                         </md-content>
@@ -76,13 +76,13 @@
                           <h3 class="md-display-2">PCB Layout</h3>
                         </md-content>
                       </md-tab>
-                      <md-tab label="Bill of Materials">
+                      <md-tab label="Bill of Materials[ ]">
                         <md-content class="md-padding">
                           <h3 class="md-display-2">Bill of Materials</h3>
                         </md-content>
                       </md-tab>
                       <md-tab label="3D">
-                        <md-content class="md-padding">
+                        <md-content class="md-padding[ ]">
                           <h1 class="md-display-2">3D</h1>
                         </md-content>
                       </md-tab>
@@ -93,14 +93,32 @@
             </md-tab>
             <md-tab label="Product">
               <md-content class="md-padding">
-                <h3 class="md-display-2">Bill of Materials</h3>
-                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                <section layout="row" layout-md="column" layout-sm="column">
+                  <div flex="80" flex-sm="100">
+                    <div flex>
+                      <h3 class="md-display-2">Bill of Materials</h3>
+                    </div>
+                    <span flex></span>
+                    <div flex>
+                      <label for="Materialsquantity">Desired Quantity:</label>
+                      <input id="Materialsquantity" type="text" placeholder="Quantity">
+                    </div>
+                  </div>
+                  <div flex="20" flex-sm="100">
+                    <h3 class="md-display-2">Project Downloads</h3>
+                    <md-button class="md-raised md-secondary" aria-label="Download Eagle File">Download Eagle File</md-button>
+                  </div>
+                </section>
               </md-content>
             </md-tab>
             <md-tab label="People">
               <md-content class="md-padding">
                 <p class="md-display-2">Manage the People who will collaborate with you on this project</p>
-                <section layout="row" layout-sm="column" layout-align="left center" class="md-padding mrg-btm">      
+                <section layout="row" layout-md="column" layout-sm="column" layout-align="space-around left" class="md-padding mrg-btm" layout-wrap>      
+                <div flex>
+                  <img src="http://placehold.it/250x200">
+                  <p>First Name, Last Name</p>
+                </div>
                 <div flex>
                   <img src="http://placehold.it/250x200">
                   <p>First Name, Last Name</p>
@@ -130,9 +148,43 @@
                     <md-option value="2">This Year</md-option>
                   </md-select>
                 </section>
-                <section layout="column" layout-align="" class="mrg-btm">     
-                  <div class="graph-placeholder"></div>
-                  <h3 class="md-display-2">Update History</h3>
+                <section layout="column" class="mrg-btm">     
+                  <div layout="row">
+                    <div flex="70" flex-sm="100">
+                      <div class="graph-placeholder"></div>
+                      <h3 class="md-display-2">Update History</h3>
+                        <md-content>
+                          <md-list-item layout="row" layout-sm="column" layout-wrap>
+                            <div flex="10">
+                              <img src="images/avatar.png" class="avatar" alt="avatar image" />
+                            </div>
+                            <div flex="90">
+                              <h4>Component Added</h4>
+                              <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.</p>
+                            </div>
+                          </md-list-item>
+                          <md-divider></md-divider>
+                          <md-list-item layout="row" layout-sm="column" layout-wrap>
+                            <div flex="10">
+                              <img src="images/avatar.png" class="avatar" alt="avatar image" />
+                            </div>
+                            <div flex="90">
+                              <h4>Test Run</h4>
+                              <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.</p>
+                            </div>
+                          </md-list-item>
+                          <md-divider></md-divider>
+                          <md-list-item layout="row" layout-sm="column" layout-wrap>
+                            <div flex="10">
+                              <img src="images/avatar.png" class="avatar" alt="avatar image" />
+                            </div>
+                            <div flex="90">
+                              <h4>Component Removed</h4>
+                              <p>Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.</p>
+                            </div>
+                          </md-list-item>
+                        </md-content>
+                    </div>
                 </section>
               </md-content>
             </md-tab>
