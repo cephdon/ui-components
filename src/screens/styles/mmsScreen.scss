@@ -2,7 +2,6 @@
 @import '_typography';
 @import '_buttons';
 
-
 /* Reusable Classes
    =========================================== */
 .visually-hidden {
@@ -34,7 +33,9 @@
 	vertical-align: middle;
 }
 
-
+.padding-right {
+	padding-right: 10px;
+}
 
 
 /* Header Styles
@@ -59,6 +60,9 @@ md-toolbar.md-default-theme {
 	background-color: $c-background-dark;
 }
 
+.logIn {
+	display: inherit;
+}
 
 /* Footer Styles
    =========================================== */

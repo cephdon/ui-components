@@ -93,12 +93,12 @@ em {
 
 /* Reusable Classes
    =========================================== */
-/* line 8, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 7, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .visually-hidden {
   text-indent: -9999px;
   visibility: hidden; }
 
-/* line 13, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 12, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .wrapper {
   width: 80%;
   margin-left: auto;
@@ -109,42 +109,50 @@ em {
       margin: 0;
       padding: 0 1%; } }
 
-/* line 25, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 24, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .d-inline {
   display: inline-block; }
 
-/* line 29, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 28, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .mrg-btm {
   margin-bottom: 25px; }
 
-/* line 33, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 32, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .vertically-center {
   vertical-align: middle; }
 
+/* line 36, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.padding-right {
+  padding-right: 10px; }
+
 /* Header Styles
    =========================================== */
-/* line 43, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 44, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .logo {
   width: 50%;
   height: auto;
   vertical-align: middle; }
 
-/* line 49, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 50, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .user-text {
   padding-right: 20px;
   color: #999999; }
 
-/* line 54, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 55, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .md-toolbar-tools {
   padding: 0 8px; }
 
-/* line 58, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 59, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 md-toolbar.md-default-theme {
   background-color: #3F4A59; }
 
+/* line 63, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+.logIn {
+  display: inherit; }
+
 /* Footer Styles
    =========================================== */
-/* line 66, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
+/* line 70, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
 .footer {
   background-color: #F0F4F6;
   height: 200px;
