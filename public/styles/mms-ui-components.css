@@ -91,6 +91,10 @@ em {
   border: 1px solid #999999;
   background-color: #343e4a; }
 
+/* line 34, /Users/matthew/projects/code/ui-components/src/screens/styles/_buttons.scss */
+.btn-position {
+  margin-top: -12px; }
+
 /* Reusable Classes
    =========================================== */
 /* line 7, /Users/matthew/projects/code/ui-components/src/screens/styles/mmsScreen.scss */
